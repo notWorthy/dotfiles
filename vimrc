@@ -113,6 +113,7 @@ set ruler
 " Default Directory
 cd ~/projects/
 
+colorscheme wombat
 
 " MAPPINGS
 "-----------------------------------
