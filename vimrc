@@ -111,7 +111,7 @@ set statusline=%F%m%r%h%w\ [TYPE=%Y]\ [Line=%l/%L(%p%%)]\ [Col=%c]
 set ruler
 
 " Default Directory
-cd ~\projects\
+cd ~/projects/
 
 
 " MAPPINGS
