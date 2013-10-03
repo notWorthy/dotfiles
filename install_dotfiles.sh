@@ -6,7 +6,7 @@
 ##########
 
 dir=~/dotfiles 			# dotfiles directory
-olddir=~\dotfiles_old 	# backup directory for old dotfiles
+olddir=~/dotfiles_old 	# backup directory for old dotfiles
 files="bashrc vimrc"
 
 ##########
