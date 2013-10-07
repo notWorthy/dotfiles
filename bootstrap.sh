@@ -4,10 +4,7 @@
 # bootstrap.sh - Installs a new development environment
 ##############################
 
-# Download with 
-# wget --no-check-certificate "https://raw.github.com/notWorthy/dotfiles/master/bootstrap.sh"
-# sudo sh bootstrap.sh
-# rm bootstrap.sh
+
 
 # update and install apt packages
 apt-get update
@@ -34,3 +31,4 @@ sh install_dotfiles.sh
 
 #TODO add scripts for installing python and other language tools
 
+chown -R $SUDO_UID:$SUDO_GID ~/.vim ~/projects ~/.dotfiles
