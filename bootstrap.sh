@@ -4,9 +4,14 @@
 # bootstrap.sh - Installs a new development environment
 ##############################
 
+# Download with 
+# wget --no-check-certificate "https://raw.github.com/notWorthy/dotfiles/master/bootstrap.sh"
+# sudo sh bootstrap.sh
+# rm bootstrap.sh
+
 # update and install apt packages
 apt-get update
-apt-get install git vim tmux guake # basic requirements without compiled packages
+apt-get -y install git vim tmux guake # basic requirements without compiled packages
 
 # Setup git for commits on this pc
 git config --global user.name "Ryan Worthy"
@@ -20,7 +25,10 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 # Create projects directory
 mkdir -p ~/projects
 
-# Make sure install_dotfiles is executable and run
+# Download dotfiles and install them.
+git clone https://github.com/notWorthy/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+
 chmod +x install_dotfiles.sh
 sh install_dotfiles.sh
 
