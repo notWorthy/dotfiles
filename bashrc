@@ -114,3 +114,4 @@ if ! shopt -oq posix; then
 fi
 
 source /usr/local/bin/virtualenvwrapper.sh
+alias sml="rlwrap sml"
