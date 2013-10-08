@@ -8,7 +8,7 @@
 
 # update and install apt packages
 apt-get update
-apt-get -y install git vim tmux guake # basic requirements without compiled packages
+apt-get -y install git vim tmux guake rlwrap # basic requirements without compiled packages
 
 # Setup git for commits on this pc
 git config --global user.name "Ryan Worthy"
