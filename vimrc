@@ -46,7 +46,9 @@ Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'pep8'
 				" Links to python documentation for highlighted word
 Bundle 'fs111/pydoc.vim'
-" Unknown Stuff
+" HTML/CSS Specific
+				" Zen-coding style completion 
+Bundle 'mattn/emmet-vim' 
 
 
  "
