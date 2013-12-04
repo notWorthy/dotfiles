@@ -1,5 +1,4 @@
-set nocompatible		" be iMproved
-filetype off			" required!
+
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -58,6 +57,12 @@ Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'pep8'
 				" Links to python documentation for highlighted word
 Bundle 'fs111/pydoc.vim'
+<<<<<<< HEAD
+=======
+" HTML/CSS Specific
+				" Zen-coding style completion 
+Bundle 'mattn/emmet-vim' 
+>>>>>>> 8593c8e7a1a031436184483539fb950e623d81e4
 
 " SML specific stuff
                 " Provides a lot of sml functionality
