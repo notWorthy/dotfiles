@@ -7,7 +7,7 @@
 
 dir=~/.dotfiles 			# dotfiles directory
 olddir=~/.dotfiles/old 	# backup directory for old dotfiles
-files="bashrc vimrc tmux.conf"
+files="bashrc profile vimrc tmux.conf"
 
 ##########
 

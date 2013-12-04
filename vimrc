@@ -18,9 +18,21 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
 				" Smarter undo
 Bundle 'sjl/gundo.vim'
+ 
 " Color Schemes
 Bundle 'Wombat'
 Bundle 'vim-scripts/wombat256.vim'
+Bundle 'Lokaltog/vim-distinguished'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'twilight'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'zeis/vim-kolor'
+Bundle '256-jungle'
+Bundle 'blugrine'
+Bundle 'darkburn'
+Bundle 'railscasts'
+
 " Snippet Support
 				" Provides tab completion snippet support
 Bundle 'garbas/vim-snipmate'
@@ -46,8 +58,10 @@ Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'pep8'
 				" Links to python documentation for highlighted word
 Bundle 'fs111/pydoc.vim'
-" Unknown Stuff
 
+" SML specific stuff
+                " Provides a lot of sml functionality
+Bundle 'chilicuil/vim-sml-coursera'
 
  "
  " Brief help
@@ -67,6 +81,7 @@ syntax on						" Turn on syntax highlighting
 set number						" Turn on line numbers
 set tabstop=4					" Set tabs to be 4 spaces
 set shiftwidth=4				" Shift 4 spaces when indenting
+set expandtab 					" Convert tabs to spaces
 set shiftround					" Round to shifwidth when indenting
 set autoindent					" Turn on autoindenting
 set copyindent					" Copy the previous indent for autoindenting
@@ -92,6 +107,7 @@ set history=1000 				" Remember lots of commands and search history
 set undolevels=1000 			" Undo as much as you want
 set wildignore=*.swp,*.bak,*.pyc,*.class 	"Ignore those extensions when searching files
 
+set nrformats+=alpha
 
 
 " INTERFACE
@@ -113,8 +129,13 @@ set ruler
 " Default Directory
 cd ~/projects/
 
-colorscheme wombat
+colorscheme wombat256mod
 
+" Turn off background screen erase so vim shows 
+" the proper background for 256 colorschemes
+if &term =~ '256color'
+    set t_ut=
+endif
 " MAPPINGS
 "-----------------------------------
 " Change <leader>
@@ -163,3 +184,7 @@ map <leader>wk <c-w>k
 map <leader>wl <c-w>l
 map <leader>wh <c-w>h
 map <leader>w= <c-w>=
+
+" Remap Increment/Decrement char
+nnoremap <C-g> <C-a>
+

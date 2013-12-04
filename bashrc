@@ -113,5 +113,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+# if the terminal can support 256color then say so
+if [ -e /usr/share/terminfo/x/xterm+256color ]; then
+    export TERM='xterm-256color'
+else
+    export TERM='xterm-color'
+fi
+
 source /usr/local/bin/virtualenvwrapper.sh
 alias sml="rlwrap sml"
